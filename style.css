@@ -421,7 +421,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -429,4 +428,33 @@ footer {
 
 footer p {
   text-align: center;
+}
+/* Visitor Counter*/
+.container {
+  max-width: 170px;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+p {
+  font-size: 13px;
+  color: #000000;
+  font-weight: bold;
+}
+
+#counter {
+  font-size: 15px;
+  color: #bf28ff;
+  font-weight: bold;
+  animation: countUp 2s ease-in-out forwards;
+}
+@keyframes countUp {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
