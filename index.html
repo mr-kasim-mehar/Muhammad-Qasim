@@ -36,6 +36,21 @@
         </div>
       </div>
     </nav>
+        <div class="container">
+      <p>Visitor Count: <span id="counter">0</span></p>
+  </div>
+
+  <script>
+      function incrementCounter() {
+          let visitors = localStorage.getItem('visitors');
+          visitors = visitors ? parseInt(visitors) + 1 : 1;
+          localStorage.setItem('visitors', visitors);
+          document.getElementById('counter').innerText = visitors;
+      }
+
+      // Call incrementCounter when the page loads
+      window.onload = incrementCounter;
+  </script>
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/PP3.png" alt="John Doe profile picture" />
